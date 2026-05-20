@@ -1,6 +1,7 @@
 # Gestor de Productos - Proyecto Final Django
 
 ## Descripción
+
 Aplicación web desarrollada con Django para gestionar productos, categorías y proveedores.
 
 ---
@@ -26,73 +27,104 @@ Aplicación web desarrollada con Django para gestionar productos, categorías y 
 
 ```bash
 python manage.py runserver
+```
 
-2. Entrar al navegador
+### 2. Entrar al navegador
 
+```text
 http://127.0.0.1:8000/
+```
 
-3. Probar registro
+### 3. Probar registro
 
+```text
 http://127.0.0.1:8000/register/
+```
 
-4. Probar login
+### 4. Probar login
 
+```text
 http://127.0.0.1:8000/login/
+```
 
-5. Probar productos
+### 5. Probar productos
 
+```text
 http://127.0.0.1:8000/
+```
 
-6. Probar categorías
+### 6. Probar categorías
 
+```text
 http://127.0.0.1:8000/categorias/
+```
 
-7. Probar proveedores
+### 7. Probar proveedores
 
+```text
 http://127.0.0.1:8000/proveedores/
+```
 
-8. Probar About
+### 8. Probar About
 
+```text
 http://127.0.0.1:8000/about/
+```
 
-9. Probar Contacto
+### 9. Probar Contacto
 
+```text
 http://127.0.0.1:8000/contacto/
+```
 
-10. Probar Perfil
+### 10. Probar Perfil
 
+```text
 http://127.0.0.1:8000/perfil/
+```
 
-Usuario de prueba
+---
+
+## Usuario de prueba
 
 Usuario:
 
+```text
 luciajirreta
+```
 
 Contraseña:
 
+```text
 Luciaivana123
-Instalación
+```
+
+---
+
+## Instalación
+
+```bash
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
+```
 
-Instalación
+---
 
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-
-Probar rápido
+## Probar rápido
 
 Entrar y crear:
 
-Una categoría.
-Un proveedor.
-Un producto utilizando esa categoría y proveedor.
+1. Una categoría.
+2. Un proveedor.
+3. Un producto utilizando esa categoría y proveedor.
 
-GitHub
+---
+
+## GitHub
 
 Repositorio del proyecto:
 
+```text
 https://github.com/luciajirreta/gestor-productos-django
+```
