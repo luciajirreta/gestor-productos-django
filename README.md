@@ -3,87 +3,96 @@
 ## Descripción
 Aplicación web desarrollada con Django para gestionar productos, categorías y proveedores.
 
+---
+
 ## Funcionalidades
+
 - CRUD de productos.
 - CRUD de categorías.
 - CRUD de proveedores.
 - Búsqueda de productos.
 - Login, logout y registro de usuarios.
+- Perfil de usuario editable.
 - Página About.
+- Página de contacto con formulario.
 - Herencia de templates con base.html.
+- Panel de administración Django.
+
+---
 
 ## Orden sugerido para probar
 
-1. Ejecutar el servidor:
+### 1. Ejecutar el servidor
+
 ```bash
 python manage.py runserver
 
-2. Entrar al navegador:
+2. Entrar al navegador
 
 http://127.0.0.1:8000/
 
-3. Probar registro:
+3. Probar registro
 
 http://127.0.0.1:8000/register/
 
-4. Probar login:
+4. Probar login
 
 http://127.0.0.1:8000/login/
 
-5. Probar productos:
+5. Probar productos
 
 http://127.0.0.1:8000/
 
-6. Probar categorías:
+6. Probar categorías
 
 http://127.0.0.1:8000/categorias/
 
-7.Probar proveedores:
+7. Probar proveedores
 
 http://127.0.0.1:8000/proveedores/
 
-8. Probar About:
+8. Probar About
 
 http://127.0.0.1:8000/about/
 
+9. Probar Contacto
+
+http://127.0.0.1:8000/contacto/
+
+10. Probar Perfil
+
+http://127.0.0.1:8000/perfil/
+
 Usuario de prueba
 
-También se puede ingresar con el superusuario creado localmente.
+Usuario:
 
+luciajirreta
+
+Contraseña:
+
+Luciaivana123
 Instalación
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
-Guardá.
+Instalación
 
-## 2. Probar rápido
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
 
-Entrá y probá crear uno de cada uno:
+Probar rápido
 
-```text
-http://127.0.0.1:8000/categorias/
+Entrar y crear:
 
-Crear categoría.
+Una categoría.
+Un proveedor.
+Un producto utilizando esa categoría y proveedor.
 
-http://127.0.0.1:8000/proveedores/
+GitHub
 
-Crear proveedor.
+Repositorio del proyecto:
 
-Después volvé a productos y probá crear producto usando esa categoría y proveedor.
-
-3. Subir cambios a GitHub
-
-En la terminal, dentro de gestor_productos, ejecutá:
-
-git add .
-
-Después:
-
-git commit -m "Entrega final Django completa"
-
-Después:
-
-git push
-
-Con eso queda terminada y actualizada en GitHub.
+https://github.com/luciajirreta/gestor-productos-django
