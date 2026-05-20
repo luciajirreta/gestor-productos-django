@@ -4,6 +4,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic.edit import FormView
 from django.db.models import Q
+from django.views.generic.edit import FormView
+from django import forms
+from django.contrib.auth.models import User
 
 from .models import Producto, Categoria, Proveedor
 
@@ -113,3 +116,27 @@ class RegisterView(FormView):
     def form_valid(self, form):
         form.save()
         return super().form_valid(form)
+    
+class ContactoForm(forms.Form):
+    nombre = forms.CharField(max_length=100)
+    email = forms.EmailField()
+    mensaje = forms.CharField(widget=forms.Textarea)
+
+
+class ContactoView(FormView):
+    template_name = "contacto.html"
+    form_class = ContactoForm
+    success_url = "/contacto/"
+
+    def form_valid(self, form):
+        print(form.cleaned_data)
+        return super().form_valid(form)
+    
+class PerfilView(LoginRequiredMixin, UpdateView):
+    model = User
+    template_name = "perfil.html"
+    fields = ["first_name", "last_name", "email"]
+    success_url = "/perfil/"
+
+    def get_object(self):
+        return self.request.user

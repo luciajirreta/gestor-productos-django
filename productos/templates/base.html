@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Gestor de Productos</title>
 </head>
 <body>
 
     <nav>
         <a href="/">Productos</a> |
-        <a href="/categorias/">Categorias</a> |
+        <a href="/categorias/">Categorías</a> |
         <a href="/proveedores/">Proveedores</a> |
         <a href="/about/">About</a> |
-        <a href="/logout/">Logout</a>
+        <a href="/contacto/">Contacto</a> |
+        <a href="/perfil/">Perfil</a> |
+
+        {% if user.is_authenticated %}
+            <form method="post" action="{% url 'logout' %}" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit">Logout</button>
+            </form>
+        {% else %}
+            <a href="/login/">Login</a> |
+            <a href="/register/">Register</a>
+        {% endif %}
     </nav>
 
     <hr>

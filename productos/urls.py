@@ -16,6 +16,8 @@ from .views import (
     ProveedorDeleteView,
     AboutView,
     RegisterView,
+    ContactoView,
+    PerfilView,
 )
 
 urlpatterns = [
@@ -37,4 +39,6 @@ urlpatterns = [
 
     path("about/", AboutView.as_view(), name="about"),
     path("register/", RegisterView.as_view(), name="register"),
+    path("contacto/", ContactoView.as_view(), name="contacto"),
+    path("perfil/", PerfilView.as_view(), name="perfil"),
 ]
