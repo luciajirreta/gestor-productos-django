@@ -169,3 +169,22 @@ Repositorio:
 ```text
 https://github.com/luciajirreta/gestor-productos-django
 ```
+
+## Despliegue
+
+Para ejecutar el proyecto localmente:
+
+```bash
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
+
+Para un despliegue en producción se debe configurar:
+
+- ALLOWED_HOSTS
+- DEBUG=False
+- Variables de entorno para SECRET_KEY
+
+El proyecto puede desplegarse en plataformas como PythonAnywhere o Render.
