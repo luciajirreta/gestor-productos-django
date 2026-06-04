@@ -87,17 +87,11 @@ http://127.0.0.1:8000/perfil/
 
 ## Usuario de prueba
 
-Usuario:
+Se puede registrar un nuevo usuario desde:
 
-```text
-luciajirreta
-```
+http://127.0.0.1:8000/register/
 
-Contraseña:
-
-```text
-Luciaivana123
-```
+o utilizar un superusuario creado localmente.
 
 ---
 
@@ -124,6 +118,38 @@ Entrar y crear:
 ## GitHub
 
 Repositorio del proyecto:
+
+```text
+https://github.com/luciajirreta/gestor-productos-django
+```
+
+## Tecnologías utilizadas
+
+* Python
+* Django 5.1.7
+* SQLite3
+
+---
+
+## Panel de Administración
+
+El proyecto incluye acceso al panel de administración de Django.
+
+Ruta:
+
+```text
+http://127.0.0.1:8000/admin/
+```
+
+Desde allí es posible administrar usuarios, productos, categorías y proveedores.
+
+---
+
+## Estado del proyecto
+
+La aplicación se encuentra completamente funcional en entorno local y puede ejecutarse siguiendo los pasos de instalación indicados anteriormente.
+
+Repositorio:
 
 ```text
 https://github.com/luciajirreta/gestor-productos-django
