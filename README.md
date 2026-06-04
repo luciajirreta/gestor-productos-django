@@ -103,6 +103,21 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+## Crear superusuario
+
+Para acceder al panel de administración de Django:
+
+```bash
+python manage.py createsuperuser
+```
+
+Luego ingresar:
+
+```text
+http://127.0.0.1:8000/admin/
+```
+
+y utilizar las credenciales creadas.
 ---
 
 ## Probar rápido
