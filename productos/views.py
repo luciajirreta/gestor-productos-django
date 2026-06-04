@@ -8,7 +8,7 @@ from django.views.generic.edit import FormView
 from django import forms
 from django.contrib.auth.models import User
 
-from .models import Producto, Categoria, Proveedor
+from .models import Producto, Categoria, Proveedor, MensajeContacto
 
 
 class ProductoListView(LoginRequiredMixin, ListView):
@@ -129,7 +129,11 @@ class ContactoView(FormView):
     success_url = "/contacto/"
 
     def form_valid(self, form):
-        print(form.cleaned_data)
+        MensajeContacto.objects.create(
+            nombre=form.cleaned_data["nombre"],
+            email=form.cleaned_data["email"],
+            mensaje=form.cleaned_data["mensaje"]
+        )
         return super().form_valid(form)
     
 class PerfilView(LoginRequiredMixin, UpdateView):
