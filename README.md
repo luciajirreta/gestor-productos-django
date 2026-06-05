@@ -187,4 +187,11 @@ Para un despliegue en producción se debe configurar:
 - DEBUG=False
 - Variables de entorno para SECRET_KEY
 
+## URL pública
+
+La aplicación está desplegada en PythonAnywhere:
+
+```text
+https://luciajirreta.pythonanywhere.com
+
 El proyecto puede desplegarse en plataformas como PythonAnywhere o Render.
